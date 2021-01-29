@@ -1,0 +1,14 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+header{
+    text-align: center;
+    background-color: #81B1AF;
+    margin: 0%;
+    
+}
