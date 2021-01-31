@@ -1,20 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios DOM</title>
     <link rel="stylesheet" href="./exdom.css">
 </head>
+
 <body>
-  
 
-        <div id="area" onclick="clicar()" onmouseover = "entrar()" onmouseout="sair()">
-            Interaja
-        </div> 
 
-    
+    <div id="area">
+        Interaja
+    </div>
 
-    <script src="./exdom.js"></script>
+
+
+    <script>
+
+        var a = window.document.getElementById('area')
+
+
+        // Adicionar um evento nessa variável e dar nome à função
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        // Aqui chamo a função
+
+        function clicar() {
+            a.innerText = 'Clicou!'
+            a.style.background = "red"
+        }
+
+        function entrar() {
+            a.innerText = 'Entrando...'
+        }
+
+        function sair() {
+            a.innerText = "Saindo..."
+            a.style.background = "lightslategrey"
+        }
+
+
+    </script>
 </body>
+
 </html>
