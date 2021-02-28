@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>País</h1>
+
+    Seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="ver" onclick="ver()">
+
+
+    <div id="res"></div>
+
+    <script>
+
+
+        function ver(){
+            var valor = document.getElementById('pais')
+            var resposta = document.querySelector('div#res')
+            if (valor = 'Brasil'){
+                resposta.innerHTML = 'Brasileiro'
+            } else {
+                resposta.innerHTML = 'Estrangeiro'
+
+            }
+
+           
+        }
+        
+    </script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
