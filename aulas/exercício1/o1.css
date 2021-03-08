@@ -15,16 +15,19 @@ section {
     padding: 15px;
     width: 500px;
     margin: auto;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.419) ;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.419);
+}
+
+#msg{
+    text-align: center;
 }
 
 #foto{
     text-align: center;
+    padding: 10%;
 }
 
 #imagem{
-    width: 20%;
-    height: auto;
     border-radius: 40px;
     
 }
