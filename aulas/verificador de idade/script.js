@@ -9,7 +9,7 @@ function verificar() {
 
     if (anoInserido.value.length == 0) {
         alert('ERRO! Corrija os dados inseridos')
-    } else if (soma >= 122) {
+    } else if (soma > 122) {
         alert(`ATENÇÃO!!! A pessoa mais velha do mundo (no momento) é uma mulher de 122 anos. Você inseriu um ano que corresponde a idade de ${soma} anos, você tem certeza que seus dados estão corretos? Se sim, onde fica a fonte da juventude? Se não, reveja seus dados.`)
     } else if (anoInserido.value > anoAtual) {
         alert(`ERRO! É impossível saber se a máquina do tempo já foi inventada mas acredito que você não tenha nascido no ano de ${anoInserido.value}. Reveja seus dados.`)
