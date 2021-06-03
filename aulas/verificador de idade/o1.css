@@ -13,24 +13,13 @@ section {
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 550px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.419);
 }
 
 #res{
     text-align: center;
-}
-
-.foto{
-    text-align: center;
-    padding: 10%;
-}
-
-#img{
-    border-radius: 40px;
-    box-shadow: 5px 5px 5px 9px rgba(99, 89, 89, 0.419);
-    
 }
 
 footer{
