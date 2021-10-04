@@ -7,6 +7,14 @@ header{
     text-align: center;
 }
 
+#section__container{
+    line-height: 90px;
+}
+
+input{
+    border-radius: 5px;
+}
+
 section {
     background: white;
     border-radius: 10px;
@@ -14,6 +22,14 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.419) ;
+}
+
+#button__container{
+    text-align: center;
+}
+
+#result{
+    background-color: blue;
 }
 
 footer{

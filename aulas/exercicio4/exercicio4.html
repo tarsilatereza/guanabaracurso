@@ -5,31 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./o1.css">
+    <title>Contador</title>
+    <link rel="stylesheet" href="./exercicio4.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Título</h1>
+        <h1>Contador</h1>
     </header>
 
     <section>
-        <div>
-teste 
+        <div id="section__container">
+            <form action="">
+                <label >Início:
+                    <input id="start" type="number">
+                </label>
+                <br>
+                <label >Fim:
+                    <input id="end" type="number">
+                </label>
+                <br>
+                <label >Passo:
+                    <input id="passo" type="number">
+                </label>
+                <br>
+
+                <div id="button__container">
+            <input class = "botao" type="button" value="contar" style="width: 100px; height: 30px;" onclick="contar()">
+                 </div>
+            </form>
+
+
+            <!-- RESULTADO -->
+
+            <div id="result">
+                
+
+            </div>
         </div>
 
-        <div>
-
-        </div>
+        
     </section>
 
     <footer>
-<p>&copy; tarsila</p>
+        <p>&copy; tarsila</p>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./exercicio.js"></script>
 </body>
 
 </html>
