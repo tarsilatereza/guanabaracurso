@@ -21,16 +21,13 @@ var total = endValue - startValue
 
 
 
-if  (start.value < 0){
-        alert("VALOR INVÁLIDO. USE VALORES MAIORES QUE 0");
-    } else if ( passoValue > endValue - startValue){
-        alert("ERRO, VOCÊ NÃO PODE DAR UM PASSO MAIOR QUE A PERNA")
+if  (startValue.lenght == 0 || endValue.lenght == 0 || passoValue.lenght == 0){
+        alert("ERRO! PREENCHA TODOS OS CAMPOS");
     } else {
-    
-        while (startValue <= endValue){
-            startValue + passoValue
-            resultado.innerHTML = `teste ${startValue}`
-        }
+        resultado.innerHTML = `Contando `
+    	for (var c = startValue; c <= endValue; c += passoValue) {
+    		resultado.innerHTML += `${c} \u{1F643} `
+    	}
     }
     
 }
