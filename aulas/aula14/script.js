@@ -1,4 +1,4 @@
-/*function parimpar(n){
+function parimpar(n){
 	if (n%2 == 0){
 		return "par"
 	} else {
@@ -6,7 +6,7 @@
 	}
 }
 
-console.log(parimpar(5))*/
+console.log(parimpar(5))
 
 function soma (a, b){
 	return a + b
