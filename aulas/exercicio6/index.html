@@ -1,35 +1,37 @@
-<!DOCTYPE html>
-<html lang="pt-Br">
+    <!DOCTYPE html>
+    <html lang="pt-Br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contagem</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
 
-<body>
+    <body>
 
-    <header>
-        <h1>Título</h1>
-    </header>
+        <header>
+            <h1>Contagem</h1>
+        </header>
 
-    <section>
-        <div>
-teste 
-        </div>
+        <section>
+            <form>
+                <label>Escolha um número entre 1 e 100</label>
+                <input id = "number" type="number"> <input type="button" name="button" id="button" value="adicionar" onclick="add()">
+    <br>
+                <select name="area" id="areaSelect" style="width: 35%;"></select>
+    <br>
+                <input type="button" name="finishButton" id="finishButton" value ="finalizar" onclick="result">
+            </form>
 
-        <div>
+        </section>
 
-        </div>
-    </section>
+        <footer>
+    <p>&copy; tarsila</p>
+        </footer>
 
-    <footer>
-<p>&copy; tarsila</p>
-    </footer>
+        <script src="./script.js"></script>
+    </body>
 
-    <script src="./script.js"></script>
-</body>
-
-</html>
+    </html>
