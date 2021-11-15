@@ -1,28 +1,37 @@
 var number = document.querySelector('input#number')
 var area = document.querySelector('select#areaSelect')
-var finish = document.querySelector('input#finishButton')
+var resultado = document.getElementById('resultado')
 
+var num = []
 
 function add(){
-	if (number.value < 1 || number.value > 100){
-		alert("escolha um número de 1 a 100")
+
+	if (number.value < 1 || number.value > 100) {
+		alert("ERRO!!! Escolha número de 1 a 100")
 	} else {
-		var selectOption = document.createElement('option')
-		var option = document.getElementsByName('option')
-		selectOption.text += `Número ${number.value} adicionado`
+		
+		num.push(number.value);
+		console.log(num);
+ 		var selectOption = document.createElement('option')
+ 		var option = document.getElementsByName('option')
+ 		selectOption.text += `Valor ${number.value} adicionado`
 		area.appendChild(selectOption)
-
+		}
 	}
-
-}
 
 function result(){
-	if (number.value < 1 || number.value > 100){
-		alert("escolha pelo menos um número de 1 a 100")
-	} else {
-		let result = document.getElementById('resultado')
-		
-		// var list = option.value
-		// alert(list)
+
+	var size = num.length - 1
+	num.sort()
+	resultado.innerHTML = `Ao todo, temos ${num.length} números cadastrados` + '<br>'
+	console.log(num[size])
+	resultado.innerHTML += `O maior valor dessa lista é ${num[size]}` + '<br>'
+	resultado.innerHTML += `O menor valor desse lista é ${num[0]}` + '<br>'
+	var soma = 0
+	for (i = 0; i < num.length; i++ ){
+		soma += Number(num[i])		
 	}
+	resultado.innerHTML += `Somando todos os valores, temos ${soma}` + '<br>'
+	var media = soma / num.length
+	resultado.innerHTML += `A média dos valores digitados é ${media}`	
 }
